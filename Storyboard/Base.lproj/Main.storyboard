@@ -11,7 +11,7 @@
         <!--Players-->
         <scene sceneID="TxU-7S-jW5">
             <objects>
-                <tableViewController id="MCa-Xa-JdP" sceneMemberID="viewController">
+                <tableViewController modalTransitionStyle="flipHorizontal" id="MCa-Xa-JdP" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="KPv-OY-7p1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,7 +258,7 @@
         <!--Table View Controller-->
         <scene sceneID="T0U-kv-xrS">
             <objects>
-                <tableViewController id="373-jR-ObW" sceneMemberID="viewController">
+                <tableViewController modalTransitionStyle="flipHorizontal" id="373-jR-ObW" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lNO-Dv-4tZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -425,22 +425,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="bLQ-2Z-TIb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ix7-wQ-ZbH" appends="YES" id="TrL-Dp-pYJ"/>
+                            <outletCollection property="gestureRecognizers" destination="cZd-Of-R8c" appends="YES" id="dgY-EJ-Bkg"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gestures" image="Gestures" id="7mt-Yz-Brh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJs-qv-qco" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="cZd-Of-R8c" userLabel="Swipe Left Gesture">
                     <connections>
-                        <segue destination="erw-As-MvH" kind="show" id="tSs-QO-Z6P"/>
+                        <segue destination="erw-As-MvH" kind="show" id="OLI-AQ-tTu"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="ix7-wQ-ZbH" userLabel="Swipe Right Gesture">
                     <connections>
-                        <segue destination="sID-7L-Cbx" kind="show" id="sbY-bP-avC"/>
+                        <segue destination="sID-7L-Cbx" kind="show" id="UgY-nd-6ma"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-512" y="1029"/>
+            <point key="canvasLocation" x="-442" y="742"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mUY-8N-o1b">
@@ -460,6 +465,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="phH-ZR-dk7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="5Ii-qx-z5W"/>
                 </viewController>
@@ -485,6 +491,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bgD-ht-Ie2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="JrK-zh-IFM"/>
                 </viewController>
